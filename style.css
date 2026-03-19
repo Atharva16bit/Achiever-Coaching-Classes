@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.header {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 180px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/* Hero */
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 60px;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 34px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-btn:hover {
+  background: #f44336;
+  border-color: #f44336;
+}
+
+/* Courses */
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* About & Contact */
+.about,
+.contact {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Mobile */
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    transition: 1s;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}

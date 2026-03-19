@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coaching Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section class="header">
+      <nav>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Coaching Logo" />
+        </a>
+
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#courses">COURSES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Building the Best Coaching</h1>
+        <p>Learning Maths and Science is now easier with us.</p>
+        <a href="#contact" class="hero-btn">Visit Us to Know More</a>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="course" id="courses">
+      <h1>Batches We Offer</h1>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Master Batch</h3>
+          <p>
+            Advanced coaching for Class 11 & 12 (PCM & PCB) with strong focus on
+            concepts, boards, and competitive exams.
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Foundation Batch</h3>
+          <p>
+            Complete academic support for Classes 6–10 covering all core
+            subjects to build strong fundamentals.
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Crash Course</h3>
+          <p>
+            Fast-track revision with smart strategies, practice tests, and
+            focused learning.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <h1>About Us</h1>
+      <p>
+        We are committed to providing quality education with experienced
+        faculty, personal attention, and result-oriented teaching methods.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h1>Contact Us</h1>
+      <p>Email: coaching@example.com</p>
+      <p>Phone: +91 9753506601</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Your Coaching Institute. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
